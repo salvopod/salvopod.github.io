@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">Conversational video editing</title>
+  <desc id="desc">A conversation beside a video preview and editing timeline</desc>
+  <rect width="1200" height="675" fill="#dceee9"/>
+  <circle cx="1100" cy="80" r="125" fill="#f6d19b" opacity=".65"/>
+  <rect x="95" y="125" width="390" height="110" rx="34" fill="#17313a"/>
+  <text x="132" y="173" fill="#fffaf1" font-family="Arial, sans-serif" font-size="27">Make the title appear</text>
+  <text x="132" y="208" fill="#fffaf1" font-family="Arial, sans-serif" font-size="27">a little earlier.</text>
+  <rect x="145" y="265" width="340" height="92" rx="30" fill="#fffaf1"/>
+  <text x="180" y="322" fill="#17313a" font-family="Arial, sans-serif" font-size="27">Use quieter motion.</text>
+  <rect x="555" y="82" width="545" height="510" rx="28" fill="#fffaf1" filter="url(#shadow)"/>
+  <rect x="584" y="112" width="487" height="350" rx="17" fill="#17313a"/>
+  <circle cx="827" cy="287" r="117" fill="#e95d75"/>
+  <text x="827" y="315" text-anchor="middle" fill="#fffaf1" font-family="Georgia, serif" font-size="84" letter-spacing="8">IDEA</text>
+  <rect x="584" y="490" width="113" height="54" rx="8" fill="#f18a68"/>
+  <rect x="706" y="490" width="182" height="54" rx="8" fill="#dceee9"/>
+  <rect x="897" y="490" width="75" height="54" rx="8" fill="#4d8fcb"/>
+  <rect x="981" y="490" width="90" height="54" rx="8" fill="#e95d75"/>
+  <line x1="852" y1="475" x2="852" y2="558" stroke="#17313a" stroke-width="5"/>
+  <circle cx="852" cy="474" r="9" fill="#17313a"/>
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="20" stdDeviation="20" flood-color="#17313a" flood-opacity=".18"/>
+    </filter>
+  </defs>
+</svg>
