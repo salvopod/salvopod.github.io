@@ -98,18 +98,15 @@ h3 { font-size: clamp(31px, 3vw, 46px); line-height: 1.08; }
   place-items: center;
 }
 
-.core {
+.profile-photo {
   position: relative;
   z-index: 2;
   width: 42%;
   aspect-ratio: 1;
   border-radius: 50%;
-  display: grid;
-  place-items: center;
-  color: var(--paper);
-  background: var(--ink);
-  font-family: Georgia, 'Times New Roman', serif;
-  font-size: clamp(80px, 10vw, 144px);
+  display: block;
+  object-fit: cover;
+  border: 7px solid var(--paper);
   box-shadow: 0 30px 70px rgba(23, 49, 58, .18);
 }
 
