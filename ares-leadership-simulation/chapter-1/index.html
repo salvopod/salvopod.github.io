@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Chapter 1 — Restore ORION</title>
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body data-stage="chapter1">
+<main>
+<header class="hud">
+<div>
+<span>CHAPTER 01</span>
+<strong>RESTORE ORION</strong>
+</div>
+<div class="chapter-progress">
+<i class="active">
+</i>
+<i>
+</i>
+<i>
+</i>
+</div>
+<div>
+<span>STORM IMPACT</span>
+<strong id="countdown">18:42</strong>
+</div>
+</header>
+<section class="game">
+<div class="room">
+<button class="hotspot power" data-clue="power">
+<span>01</span> Power console</button>
+<button class="hotspot life" data-clue="life">
+<span>02</span> Life support</button>
+<button class="hotspot comms" data-clue="comms">
+<span>03</span> Communications</button>
+<button class="orion-button" id="orion-button" disabled>ORION OFFLINE <small>Recover 3 system logs</small>
+</button>
+</div>
+<aside class="mission-panel">
+<p class="label">MISSION OBJECTIVE</p>
+<h2>Restore ORION before the storm reaches the station.</h2>
+<p>Investigate all three systems. Their evidence becomes the context for your AI directive.</p>
+<div class="evidence">
+<span id="evidence-power">Power log — missing</span>
+<span id="evidence-life">Life-support log — missing</span>
+<span id="evidence-comms">Communications log — missing</span>
+</div>
+</aside>
+</section>
+<dialog id="clue-dialog">
+<button class="close" data-close>×</button>
+<p class="label" id="clue-label">
+</p>
+<h2 id="clue-title">
+</h2>
+<p id="clue-copy">
+</p>
+<div class="data-strip" id="clue-data">
+</div>
+<button class="primary" data-close>Store evidence</button>
+</dialog>
+<dialog class="orion" id="orion-dialog">
+<button class="close" data-close>×</button>
+<p class="label">ORION ACTIVATION · DIRECTIVE 001</p>
+<h2>Tell the AI what success means.</h2>
+<form id="directive-form">
+<fieldset>
+<legend>Objective</legend>
+<label>
+<input type="radio" name="objective" value="correct"> Keep all six crew members alive</label>
+<label>
+<input type="radio" name="objective" value="wrong"> Restore every system immediately</label>
+</fieldset>
+<fieldset>
+<legend>Context</legend>
+<label>
+<input type="radio" name="context" value="correct"> Solar input is blocked for 19 hours</label>
+<label>
+<input type="radio" name="context" value="wrong"> The station is experiencing a fault</label>
+</fieldset>
+<fieldset>
+<legend>Constraint</legend>
+<label>
+<input type="radio" name="constraint" value="correct"> Reserve 20% oxygen for medical</label>
+<label>
+<input type="radio" name="constraint" value="wrong"> Use all available resources</label>
+</fieldset>
+<fieldset>
+<legend>Output</legend>
+<label>
+<input type="radio" name="output" value="correct"> A ranked plan with risks and assumptions</label>
+<label>
+<input type="radio" name="output" value="wrong"> The fastest possible solution</label>
+</fieldset>
+<button class="primary" type="submit">Transmit directive</button>
+</form>
+<div class="orion-response" id="orion-response">
+</div>
+<aside class="learning-reveal" id="learning-reveal" hidden><p class="label">AI LEARNING 01 · PROMPT ARCHITECTURE</p><h3>The AI element: turning leadership intent into an actionable brief.</h3><p>ORION could calculate, but it could not infer what mattered most. Your choices supplied <strong>objective + context + constraints + output.</strong></p><div><span><b>AI contributed</b>Rapid analysis and ranked options</span><span><b>You contributed</b>Purpose, boundaries and the definition of success</span></div></aside>
+<a class="primary action-link continue" id="next-chapter" href="../chapter-2/" hidden>Continue to Chapter 02</a>
+</dialog>
+</main>
+<script src="../mission.js">
+</script>
+</body>
+</html>

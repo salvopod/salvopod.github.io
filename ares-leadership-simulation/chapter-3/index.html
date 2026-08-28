@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Chapter 3 — The Silent Crew</title>
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body data-stage="chapter3">
+<main>
+<section class="crew">
+<header class="hud">
+<div>
+<span>CHAPTER 03</span>
+<strong>THE SILENT CREW</strong>
+</div>
+<div class="chapter-progress">
+<i class="done">
+</i>
+<i class="done">
+</i>
+<i class="active">
+</i>
+</div>
+<div>
+<span>CREW STATUS</span>
+<strong>DIVIDED</strong>
+</div>
+</header>
+<div class="crew-intro">
+<p class="label">PRIVATE CREW CHANNELS</p>
+<h2>ORION has the data.<br>The crew has the truth.</h2>
+<p>Open all three testimonies before asking AI to advise you.</p>
+</div>
+<div class="testimonies">
+<button class="testimony" data-voice="engineer">
+<span>01 · ENGINEERING</span>
+<strong>Dr. Mara Okafor</strong>
+<em>“The repair is possible. The schedule is not.”</em>
+<i>Open testimony</i>
+</button>
+<button class="testimony" data-voice="medical">
+<span>02 · MEDICAL</span>
+<strong>Dr. Lev Chen</strong>
+<em>“The crew can work. That does not mean they should.”</em>
+<i>Open testimony</i>
+</button>
+<button class="testimony" data-voice="pilot">
+<span>03 · OPERATIONS</span>
+<strong>Commander Inés Vega</strong>
+<em>“If we wait, the launch window closes.”</em>
+<i>Open testimony</i>
+</button>
+</div>
+<div class="synthesis" id="synthesis" hidden>
+<p class="label">DIRECTIVE 003 · HUMAN CONTEXT</p>
+<h2>How should ORION interpret disagreement?</h2>
+<div class="synthesis-options">
+<button data-synthesis="vote">Recommend the majority view.</button>
+<button data-synthesis="rank">Rank the speakers by expertise and select one.</button>
+<button data-synthesis="tension">Map agreements, conflicts, missing evidence and reversible options.</button>
+</div>
+<div class="synthesis-response" id="synthesis-response">
+</div>
+<aside class="learning-reveal" id="learning-reveal" hidden><p class="label">AI LEARNING 03 · HUMAN SENSEMAKING</p><h3>The AI element: synthesising perspectives without erasing dissent.</h3><p>The stronger instruction asked ORION to map agreements, tensions and gaps while preserving human accountability.</p><div><span><b>AI contributed</b>Pattern finding across multiple viewpoints</span><span><b>You contributed</b>Empathy, ethical judgement and the final decision</span></div></aside>
+<a class="primary action-link" id="chapter3-next" href="../result/" hidden>Complete mission</a>
+</div>
+</section>
+<dialog id="testimony-dialog">
+<button class="close" data-close>×</button>
+<p class="label" id="voice-role">
+</p>
+<h2 id="voice-name">
+</h2>
+<blockquote id="voice-copy">
+</blockquote>
+<div class="data-strip" id="voice-data">
+</div>
+<button class="primary" data-close>Acknowledge testimony</button>
+</dialog>
+</main>
+<script src="../mission.js">
+</script>
+</body>
+</html>
