@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f7f3ff" />
+    <title>Experiment 005 — Meet Maya</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="experience" aria-labelledby="page-title">
+      <div class="orb orb-one" aria-hidden="true"></div>
+      <div class="orb orb-two" aria-hidden="true"></div>
+
+      <header class="intro">
+        <p class="eyebrow experiment-label">Experiment 005 · Interactive guide</p>
+        <h1 id="page-title">Meet Maya</h1>
+        <p class="intro-subtitle">Choose a card and <strong>Maya, your learning guide,</strong> will help you explore.</p>
+      </header>
+
+      <section class="layout">
+        <nav class="choices" aria-label="Choose a topic">
+          <button class="choice" type="button" data-topic="discover" aria-pressed="false">
+            <span class="choice-number">01</span>
+            <span><strong>Discover</strong><small>Start with the big picture</small></span>
+            <span class="choice-arrow" aria-hidden="true">↗</span>
+          </button>
+          <button class="choice" type="button" data-topic="understand" aria-pressed="false">
+            <span class="choice-number">02</span>
+            <span><strong>Understand</strong><small>Make the idea feel clear</small></span>
+            <span class="choice-arrow" aria-hidden="true">↗</span>
+          </button>
+          <button class="choice" type="button" data-topic="practice" aria-pressed="false">
+            <span class="choice-number">03</span>
+            <span><strong>Try it</strong><small>Turn insight into action</small></span>
+            <span class="choice-arrow" aria-hidden="true">↗</span>
+          </button>
+        </nav>
+
+        <article class="content-panel" aria-live="polite">
+          <div class="panel-icon" aria-hidden="true">✦</div>
+          <p class="panel-kicker">A little guidance</p>
+          <h2 id="panel-title">Where shall we begin?</h2>
+          <p id="panel-copy">Pick one of the three cards. I’ll react and bring the right idea into focus.</p>
+          <div class="panel-prompt">
+            <span class="pulse-dot" aria-hidden="true"></span>
+            <span id="panel-prompt">Maya is ready when you are</span>
+          </div>
+        </article>
+
+        <section class="maya-zone" aria-label="Maya, your learning guide">
+          <button class="maya-button" type="button" aria-label="Ask Maya for an idea" aria-pressed="false">
+            <span class="bulb" aria-hidden="true"><span class="bulb-rays">✦</span>💡</span>
+            <span class="speech">Click me for an idea</span>
+            <span class="idea-bubble" id="maya-idea">Choose a card and I’ll share an idea.</span>
+            <span class="maya-motion">
+              <img src="./assets/maya-selected-transparent.png" alt="Maya, a friendly learning guide in a lavender suit" />
+            </span>
+          </button>
+        </section>
+      </section>
+
+      <section class="learning-section" aria-labelledby="learning-title">
+        <div class="learning-intro">
+          <p class="eyebrow">The experiment</p>
+          <h2 id="learning-title">Can Codex turn a static character into an interactive learning guide?</h2>
+          <p>Starting with one Maya image, I used Codex to add learner choices, changing information, navigation and contextual support.</p>
+        </div>
+
+        <div class="learning-summary">
+          <p class="learning-statement"><strong>The lesson:</strong> Codex can quickly turn a static character into a reusable learning interaction—not simply animate an image.</p>
+          <div class="learning-points">
+            <article>
+              <span>01</span>
+              <h3>Start with one image</h3>
+              <p>A single character asset became the visual starting point for the complete experience.</p>
+            </article>
+            <article>
+              <span>02</span>
+              <h3>Add interaction</h3>
+              <p>Cards, changing information and reactions gave learners a clear route through the content.</p>
+            </article>
+            <article>
+              <span>03</span>
+              <h3>Support the learner</h3>
+              <p>Contextual ideas made Maya useful as a guide rather than decorative animation.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>

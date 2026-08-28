@@ -134,6 +134,11 @@ h3 { font-size: clamp(31px, 3vw, 46px); line-height: 1.08; }
 .coach .project-visual { background: #f6d7c7; }
 .prompt .project-visual { background: #d9e5f1; }
 .editing .project-visual { background: #dceee9; }
+.maya .project-visual { background: #dceee9; }
+
+.maya-preview { position: relative; width: 78%; height: 90%; display: flex; align-items: end; justify-content: center; }
+.maya-preview img { width: auto; height: 94%; max-width: 72%; object-fit: contain; transform: scaleX(-1); filter: drop-shadow(0 18px 20px rgba(23,49,58,.14)); }
+.maya-preview span { position: absolute; z-index: 2; left: 1%; top: 27%; padding: 11px 14px; border-radius: 14px 14px 4px 14px; color: var(--ink); background: var(--paper); box-shadow: 0 12px 28px rgba(23,49,58,.13); font-size: 12px; font-weight: 800; transform: rotate(-3deg); }
 
 .chart { width: 72%; height: 67%; padding: 30px 26px 20px; border-radius: 17px; background: var(--paper); display: flex; align-items: end; gap: 5%; box-shadow: 0 25px 50px rgba(23, 49, 58, .13); transform: rotate(-3deg); }
 .chart span { flex: 1; height: var(--height); border-radius: 5px 5px 2px 2px; background: var(--coral); }
