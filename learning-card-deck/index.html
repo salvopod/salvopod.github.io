@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#dceee9" />
+    <title>Experiment 006 — Learning Card Deck</title>
+    <meta name="description" content="Can an interactive card deck make learning content easier to explore?" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main>
+      <section class="hero" aria-labelledby="page-title">
+        <header class="intro">
+          <p class="eyebrow">Experiment 006 · Interactive content</p>
+          <h1 id="page-title">Learning,<br />dealt differently.</h1>
+          <p>Explore five principles for creating useful learner support. Select a card, reveal its idea and move through the complete deck.</p>
+        </header>
+
+        <div class="interaction-shell">
+          <section class="deck-area" aria-label="Five learning principle cards">
+            <div class="deck" id="card-deck">
+              <button class="deck-card" type="button" data-index="0" aria-label="Open card 1: Orientation">
+                <span class="card-number">01</span>
+                <span class="card-tag">Start here</span>
+                <strong>Orientation</strong>
+                <span class="card-symbol" aria-hidden="true">↗</span>
+              </button>
+              <button class="deck-card" type="button" data-index="1" aria-label="Open card 2: Relevance">
+                <span class="card-number">02</span>
+                <span class="card-tag">Make it matter</span>
+                <strong>Relevance</strong>
+                <span class="card-symbol" aria-hidden="true">✦</span>
+              </button>
+              <button class="deck-card" type="button" data-index="2" aria-label="Open card 3: Choice">
+                <span class="card-number">03</span>
+                <span class="card-tag">Create agency</span>
+                <strong>Choice</strong>
+                <span class="card-symbol" aria-hidden="true">◌</span>
+              </button>
+              <button class="deck-card" type="button" data-index="3" aria-label="Open card 4: Practice">
+                <span class="card-number">04</span>
+                <span class="card-tag">Use the idea</span>
+                <strong>Practice</strong>
+                <span class="card-symbol" aria-hidden="true">△</span>
+              </button>
+              <button class="deck-card" type="button" data-index="4" aria-label="Open card 5: Reflection">
+                <span class="card-number">05</span>
+                <span class="card-tag">Notice progress</span>
+                <strong>Reflection</strong>
+                <span class="card-symbol" aria-hidden="true">◎</span>
+              </button>
+            </div>
+            <p class="deck-hint">Select any card to bring it forward</p>
+          </section>
+
+          <article class="detail-panel" aria-live="polite">
+            <div class="detail-topline">
+              <span id="detail-count">Card 01 of 05</span>
+              <span class="visited-count"><strong id="visited-count">1</strong>/5 explored</span>
+            </div>
+            <p class="detail-kicker" id="detail-kicker">Start here</p>
+            <h2 id="detail-title">Orientation</h2>
+            <p class="detail-copy" id="detail-copy">Help learners understand where they are, what they will do and why it matters before asking them to begin.</p>
+            <div class="example-box">
+              <span>Try this</span>
+              <p id="detail-example">Open with one clear outcome and show the learner how the activity is structured.</p>
+            </div>
+            <div class="controls">
+              <button class="nav-button" id="previous-card" type="button" aria-label="Previous card">←</button>
+              <div class="progress" id="progress" aria-label="Card progress"></div>
+              <button class="nav-button" id="next-card" type="button" aria-label="Next card">→</button>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="learning" aria-labelledby="learning-title">
+        <div>
+          <p class="eyebrow">The experiment</p>
+          <h2 id="learning-title">Can an interactive card deck make learning content easier to explore?</h2>
+        </div>
+        <div class="learning-copy">
+          <p class="lesson"><strong>The hypothesis:</strong> layering content can create curiosity and reduce visual overload, provided learners can still see their progress and navigate clearly.</p>
+          <div class="learning-grid">
+            <article><span>01</span><h3>Compact</h3><p>Several ideas occupy one focused area instead of becoming a long page.</p></article>
+            <article><span>02</span><h3>Exploratory</h3><p>Learners choose what to bring forward and can revisit cards in any order.</p></article>
+            <article><span>03</span><h3>Trackable</h3><p>Progress and controls prevent the deck from becoming a decorative mystery.</p></article>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>
