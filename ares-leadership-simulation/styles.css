@@ -10,6 +10,8 @@ button{font:inherit}
 .chapter-progress i.active{background:var(--red)}
 .chapter-progress i.done{background:var(--cyan)}
 .opening{position:relative;min-height:100svh;display:grid;align-items:end;padding:clamp(28px,6vw,90px);overflow:hidden;background:linear-gradient(90deg,rgba(0,0,0,.7),rgba(0,0,0,.08)),url('./assets/ares-exterior.png') center/cover}
+.home-link{position:absolute;z-index:6;top:28px;left:clamp(28px,6vw,90px);color:#edf3ef;font-size:.68rem;font-weight:800;letter-spacing:.12em;text-decoration:none;text-transform:uppercase}
+.home-link:hover{color:var(--cyan)}
 .opening-video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0}
 .opening:after{content:"";position:absolute;inset:0;background:linear-gradient(transparent 65%,#080909);pointer-events:none}
 .film-grain{position:absolute;inset:-50%;z-index:2;opacity:.045;background:repeating-radial-gradient(circle at 30% 40%,#fff 0 1px,transparent 1px 4px);animation:grain .22s steps(2) infinite;pointer-events:none}

@@ -149,6 +149,8 @@ h3 { font-size: clamp(31px, 3vw, 46px); line-height: 1.08; }
 .card-deck-project .project-visual { background: #d9e5f1; }
 .sana-game-project .project-visual { background: #171b35; }
 .sana-game-project .project-visual img { width: 100%; height: 100%; object-fit: cover; object-position: center; }
+.ares-project .project-visual { background: #07090a; }
+.ares-project .project-visual img { width: 100%; height: 100%; object-fit: cover; object-position: center; }
 .simulator-project .project-visual { background: #0c1513; }
 .simulator-project .project-visual img { width: 100%; height: 100%; object-fit: cover; object-position: left top; }
 .deck-preview { position: relative; width: 54%; height: 72%; }
