@@ -153,6 +153,18 @@ h3 { font-size: clamp(31px, 3vw, 46px); line-height: 1.08; }
 .ares-project .project-visual img { width: 100%; height: 100%; object-fit: cover; object-position: center; }
 .simulator-project .project-visual { background: #0c1513; }
 .simulator-project .project-visual img { width: 100%; height: 100%; object-fit: cover; object-position: left top; }
+.career-quest-project .project-visual { background: #11202c; }
+.quest-preview { position: relative; width: 100%; height: 100%; overflow: hidden; background: linear-gradient(#183344 0 57%, #6ab5b0 57% 63%, #d8af75 63%); image-rendering: pixelated; }
+.quest-preview::before { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, rgba(255,255,255,.04) 1px, transparent 1px), linear-gradient(rgba(255,255,255,.04) 1px, transparent 1px); background-size: 8px 8px; opacity: .35; }
+.quest-preview strong { position: absolute; z-index: 3; left: 8%; top: 12%; color: #fff3d3; font: 900 clamp(28px,4vw,54px)/.83 ui-monospace, SFMono-Regular, Menlo, monospace; letter-spacing: -.08em; text-shadow: 4px 4px 0 #b84d48; }
+.quest-sun { position: absolute; right: 9%; top: 9%; width: 64px; height: 64px; border-radius: 50%; background: #f4c456; box-shadow: 0 0 0 9px rgba(244,196,86,.12); }
+.quest-island { position: absolute; bottom: 22%; width: 17%; height: 20%; border-radius: 48% 48% 18% 18%; background: #5d9c72; border-bottom: 14px solid #416f5d; box-shadow: inset 0 7px 0 rgba(255,255,255,.18); }
+.quest-island-one { left: 5%; }
+.quest-island-two { left: 29%; bottom: 17%; background: #ce795c; border-color: #8c4f49; }
+.quest-island-three { left: 53%; bottom: 25%; background: #a392c8; border-color: #6d6298; }
+.quest-island-four { right: 5%; bottom: 18%; background: #d3aa52; border-color: #8b6d3d; }
+.quest-path { position: absolute; z-index: 2; left: 19%; right: 18%; bottom: 29%; height: 4px; border-top: 4px dashed #fff3d3; transform: rotate(-2deg); opacity: .85; }
+.quest-player { position: absolute; z-index: 3; left: 11%; bottom: 40%; width: 20px; height: 25px; background: #fff3d3; box-shadow: 0 -10px 0 -2px #b84d48, 12px 3px 0 -5px #fff3d3, -7px 16px 0 -5px #fff3d3, 7px 16px 0 -5px #fff3d3; }
 .deck-preview { position: relative; width: 54%; height: 72%; }
 .deck-preview span { position: absolute; inset: 0; border: 1px solid rgba(23,49,58,.15); border-radius: 18px; box-shadow: 0 18px 36px rgba(23,49,58,.12); transform-origin: 50% 90%; }
 .deck-preview span:nth-child(1) { background: #f4cbd2; transform: translate(23px,20px) rotate(7deg) scale(.92); }
